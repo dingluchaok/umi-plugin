@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import { connect } from 'dva';
 import Users from './components/Users';
+import MQ from '../../../blocks/demo/src/index'
 
 class BLOCK_NAME_CAMEL_CASE extends Component {
   componentDidMount() {
@@ -16,6 +17,7 @@ class BLOCK_NAME_CAMEL_CASE extends Component {
     return (
       <div>
         <Users />
+        <MQ />
       </div>
     );
   }

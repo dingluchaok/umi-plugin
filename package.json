@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "start": "UMI_UI=none umi dev",
+    "start": "cross-env UMI_UI=none BLOCK=templates/user-dashboard umi dev",
     "lint:style": "stylelint \"src/**/*.less\" --syntax less",
     "lint": "eslint --ext .js src mock tests && npm run lint:style",
     "lint:fix": "eslint --fix --ext .js src mock tests && npm run lint:style",
@@ -14,6 +14,7 @@
   "devDependencies": {
     "@ant-design/pro-layout": "^4.5.16",
     "babel-eslint": "^10.0.1",
+    "cross-env": "^6.0.3",
     "eslint": "^5.4.0",
     "eslint-config-airbnb": "^17.0.0",
     "eslint-config-prettier": "^3.0.1",
